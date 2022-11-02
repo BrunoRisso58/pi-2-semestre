@@ -16,5 +16,9 @@ Para ver como está o site, basta: <br>
 5- entrar no link: "localhost:3000" <br>
 
 ## Objetivo do projeto e ideia 
+Desenvolver um sistema (front-end, back-end e banco de dados) que contribua com o 4º Objetivo de Desenvolvimento da ONU. 
+<br> <br>
+<b>Tema: Educação de Qualidade </b> ([Leia mais](https://brasil.un.org/pt-br/sdgs/4)) <br><br>
+<b>Objetivo 4: </b>Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos
 
 ## Documentação (em andamento)
