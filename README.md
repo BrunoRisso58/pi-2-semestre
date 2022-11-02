@@ -1,6 +1,12 @@
 "# pi-2-semestre" 
 
-Para ver como está o site, basta
+### ATENÇÃO ### <br>
+
+antes de usar os arquivos do projeto <br>
+utilize o comando "git pull" para adiquirir <br>
+a versão mais recente do projeto <br>
+
+Para ver como está o site, basta <br>
 
 1- baixar o Node.js <br>
 2- baixar o conteudo do repositorio <br>
