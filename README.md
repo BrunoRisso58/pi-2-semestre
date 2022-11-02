@@ -20,10 +20,11 @@ Desenvolver um sistema (front-end, back-end e banco de dados) que contribua com 
 <br> <br>
 <b>Tema: Educação de Qualidade </b> ([Leia mais](https://brasil.un.org/pt-br/sdgs/4)) <br><br>
 <b>Objetivo 4: </b>Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos
-<br><br>
+<br>
 
 ## Nossa ideia
 Criar uma plataforma de ensino de programação para crianças e adolescentes com TDAH, considerando boas práticas para acessibilidade e auxílio na manutenção do foco e da atenção. O projeto considera também os benefícios da gamificação para o ensino, de maneira geral, mas principalmente para a área da tecnologia.  
-<br><br> 
-O objetivo é contribuir também com o acesso de crianças e adolescentes com TDAH ao conhecimento da tecnologia e da programação. 
+<br>
+Outro objetivo é contribuir com o acesso de crianças e adolescentes com TDAH ao conhecimento da tecnologia e da programação, considerando a importância do setor atual e futuramente. 
+
 ## Documentação (em andamento)
