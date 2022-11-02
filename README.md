@@ -1,5 +1,3 @@
-"# pi-2-semestre" 
-
 "### ATENÇÃO ###" <br>
 
 antes de usar os arquivos do projeto <br>
