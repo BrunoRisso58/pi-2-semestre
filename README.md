@@ -1,6 +1,7 @@
 # Projeto Integrado 2º semestre - Desenvolvimento de Software Multiplataforma - FATEC Araras
+Disciplinas de Desenvolvimento Web, Banco de Dados Relacional e Engenharia de Software
 
-# Equipe, ATENÇÃO:
+## Equipe, ATENÇÃO:
 
 Antes de usar os arquivos do projeto <br>
 utilize o comando "git pull" para adquirir <br>
