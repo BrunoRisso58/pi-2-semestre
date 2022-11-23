@@ -1,6 +1,7 @@
 <template>
 
     <div v-if="$vuetify.breakpoint.name !== 'xs'">
+        <jogos></jogos>
     </div>
 
     <div v-else>
@@ -9,10 +10,11 @@
 </template>
 
 <script>
-    import header from '../components/header/header.vue'
-    import HeaderMobile from '../components/header/headerMobile.vue'
+
+    import jogos from '../components/jogos/jogos.vue';
+
     export default {
-        components: { header, HeaderMobile },
+        components: { jogos, },
 
     }
 </script>

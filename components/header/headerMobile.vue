@@ -5,24 +5,23 @@
       color="white"
       elevation="1"
     >
+      <v-row no-gutters align="center" justify="center">
+        <v-col cols="4">
+          <v-app-bar-nav-icon 
+          @click.stop="drawer = !drawer" 
+          />
+        </v-col>
 
-        <v-row no-gutters align="center">
-            <v-col cols="4">
-                <v-app-bar-nav-icon 
-                @click.stop="drawer = !drawer" 
-                />
-            </v-col>
+        <v-col cols="4" align="center">
+          <h4>LOREM IPSUN</h4>
+        </v-col>
 
-            <v-col cols="4" align="center">
-                <h4>LOREM IPSUN</h4>
-            </v-col>
-
-            <v-col cols="4" align="right">
-                <v-btn icon>
-                    <v-icon>mdi-account</v-icon>
-                </v-btn>
-            </v-col>
-        </v-row>
+        <v-col cols="4" align="right">
+          <v-btn icon>
+            <v-icon>mdi-account</v-icon>
+          </v-btn>
+        </v-col>
+      </v-row>
 
     </v-app-bar>
 
@@ -40,7 +39,7 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item v-for="item in header" :key="item">
+          <v-list-item v-for="item in header" :key="item.name">
 
             <v-list-item-title>
               <router-link  :to="item.route">

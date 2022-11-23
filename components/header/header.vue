@@ -24,7 +24,7 @@
 
             <v-col align="center">
                 <v-row style="max-width:1300px">
-                  <v-col v-for="item in header" :key="item">
+                  <v-col v-for="item in header" :key="item.name">
                     <router-link :to="item.route" style="text-decoration: none; color: black;">
                       {{ item.name }}
                     </router-link>

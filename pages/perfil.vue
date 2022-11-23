@@ -1,11 +1,11 @@
 <template>
 
   <div v-if="$vuetify.breakpoint.name !== 'xs'">
-    <perfil></perfil>
+    <perfil />
   </div>
 
   <div v-else>    
-    <perfil-mobile></perfil-mobile>
+    <perfil-mobile />
   </div>
 
 </template>
