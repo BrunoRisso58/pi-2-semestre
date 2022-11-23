@@ -3,53 +3,39 @@
 
     <v-app-bar
       color="white"
-      
+      height="160px"
       elevation="1"
     >
 
-        <v-row no-gutters align="center">
-            <v-col>
-                <v-app-bar-nav-icon 
-                @click.stop="drawer = !drawer" 
-                />
-            </v-col>
+        <v-row align="center">
+          <v-col cols="2">
 
-            <v-col align="center">
-                <h2>
-                    LOREM IPSUN
-                </h2>
+          </v-col>
+            <v-col cols="8" align="center">
+              <h2>
+                LOREM IPSUN
+              </h2>
             </v-col>
-
-            <v-col align="right">
+            <v-col align="right" cols="2">
                 <v-btn icon>
                     <v-icon>mdi-account</v-icon>
                 </v-btn>
             </v-col>
+
+            <v-col align="center">
+                <v-row style="max-width:1300px">
+                  <v-col v-for="item in header" :key="item">
+                    <router-link :to="item.route" style="text-decoration: none; color: black;">
+                      {{ item.name }}
+                    </router-link>
+                  </v-col>
+                </v-row>
+            </v-col>
+
+            
         </v-row>
 
     </v-app-bar>
-
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      left
-      temporary
-    >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-title>Foo</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
-
 
     </div>
 </template>
@@ -64,6 +50,16 @@
         data: () => ({
         drawer: false,
         group: null,
+        header: [
+          { name: 'Home       ', route: '/' },
+          { name: 'Quem Somos ', route: '/quemsomos' },
+          { name: 'Oque é TDHA', route: '/oqueetdah' },
+          { name: 'Planos     ', route: '/planos' },
+          { name: 'Login      ', route: '/login' },
+          { name: 'Cadastro   ', route: '/cadastro' },
+          { name: 'Perfil     ', route: '/perfil' },
+          { name: 'Jogos      ', route: '/jogos' },
+        ]
         }),
 
         watch: {
