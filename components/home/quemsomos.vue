@@ -1,5 +1,7 @@
 <template>
-  
+  <div>
+    <!-- Codigo aqui :) -->
+  </div>
 </template>
 
 <script>

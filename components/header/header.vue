@@ -52,7 +52,7 @@
         group: null,
         header: [
           { name: 'Home       ', route: '/' },
-          { name: 'Quem Somos ', route: '/quemsomos' },
+          { name: 'Quem Somos ', route: '/quem-somos' },
           { name: 'Oque é TDHA', route: '/oqueetdah' },
           { name: 'Planos     ', route: '/planos' },
           { name: 'Login      ', route: '/login' },

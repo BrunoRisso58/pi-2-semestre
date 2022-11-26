@@ -13,8 +13,6 @@
 </template>
 
 <script>
-import headerMobileVue from '../components/header/headerMobile.vue';
-import headerVue from '../components/header/header.vue';
 
 
 
@@ -23,7 +21,6 @@ export default {
 
   
   components: {
-    headerMobileVue, headerVue,
   },
 }
 </script>
