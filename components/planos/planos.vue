@@ -29,9 +29,9 @@ export default {
     data: () => ({
 
         planos: [
-          { name: 'Plano 1', valor: 30 },
-          { name: 'Plano 2', valor: 30 },
-          { name: 'Plano 3', valor: 30 },
+          { name: 'Plano 1', valor: '0' },
+          { name: 'Plano 2', valor: '49.90' },
+          { name: 'Plano 3', valor: '59.90' },
 
         ]
         }),
