@@ -8,10 +8,12 @@
         sm="4"
         md="3"
         >
-            <v-card>
-                <v-img src="" />
+            <v-card height="200">
+                
+                <v-img src=""/>
 
-                <h2>{{items.title}}</h2>
+                <h2 class="title">{{items.title}}</h2>
+            
             </v-card>
         </v-col>
     </v-row>
@@ -46,6 +48,7 @@ export default {
             },
             
         ],
+        
     })
 }
 </script>
