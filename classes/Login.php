@@ -10,7 +10,7 @@ class Login {
             session_start();
             if($_POST['username'] == $this->email and $_POST['password'] == $this->password) {
                 $_SESSION['loggedin'] = TRUE;
-                $_SESSION["username"] = $this->email;
+                $_SESSION['username'] = $this->email;
             } else {
                 $_SESSION['loggedin'] = FALSE;
             }
