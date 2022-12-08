@@ -5,15 +5,14 @@
 </template>
 
 <script>
-import Tdah from '../components/home/tdah.vue';
+import Tdah from "../components/home/tdah.vue";
 
 export default {
-    components:{
-        Tdah,
-    }
-}
+  components: {
+    Tdah,
+  },
+};
 </script>
 
 <style>
-
 </style>

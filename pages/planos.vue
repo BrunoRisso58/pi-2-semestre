@@ -3,15 +3,14 @@
 </template>
 
 <script>
-    import planosVue from '../components/planos/planos.vue';
+import planosVue from "../components/planos/planos.vue";
 
 export default {
-    comments:{
-        planosVue,
-    }
-}
+  comments: {
+    planosVue,
+  },
+};
 </script>
 
 <style>
-
 </style>

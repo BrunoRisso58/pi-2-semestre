@@ -5,15 +5,14 @@
 </template>
 
 <script>
-    import quemSomos from '../components/home/quemsomos.vue';
+import quemSomos from "../components/home/quemsomos.vue";
 
 export default {
-    components:{
-        quemSomos,
-    }
-}
+  components: {
+    quemSomos,
+  },
+};
 </script>
 
 <style>
-
 </style>
