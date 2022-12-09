@@ -1,6 +1,6 @@
 <?php
 
-class conexao
+class Database
 {
 
     public $dbname = '';
@@ -11,13 +11,12 @@ class conexao
     function connect()
     {
         try {
-            $this->conn = new PDO("mysql:host=localhost;dbname=banco", $this->userDB, $this->passwordDB);
+            $this->conn = new PDO("mysql:host=localhost;dbname=bancodedados", $this->userDB, $this->passwordDB);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             echo "Conexão falhou: " . $e->getMessage();
         }
     }
-
 
     function create()  // adicionar mais conforme as tabelas
     {
@@ -29,16 +28,37 @@ class conexao
         $this->conn = null;
     }
 
-    function select()  // adicionar mais conforme as tabelas
+    function selectClientes()  // adicionar mais conforme as tabelas
     {
         try {
             $this->connect();
-            $sql = "SELECT ";
+            $sql = "SELECT * FROM cliente";
             $result = $this->conn->query($sql)->fetchAll();
             if ($result == false) {
-                echo "";
+                echo "Ainda não há nenhum cliente criado!";
             } else {
                 foreach ($result as $row) {
+                    $dataJson = file_get_contents('db.json');
+                    $decodedDataJson = json_decode($dataJson, true);
+
+                    $dadosCliente = [
+                        'cliente' => [
+                            [
+                                'id' => '1',
+                                'idPlano' => '1',
+                                'nome' => 'Vitor',
+                                'CPF' => '15218229824',
+                                'idade' => '18',
+                                'telefone' => '19998526524',
+                                'email' => 'senha'
+                            ],
+                        ],
+                    ];
+
+                    $newDataJson = $decodedDataJson['cliente'] . $dadosCliente;
+
+                    $arquivo = __DIR__ . '../../db.json';
+                    file_put_contents($arquivo, json_encode($newDataJSon, JSON_PRETTY_PRINT));
                 }
             }
         } catch (PDOException $e) {
@@ -73,3 +93,6 @@ class conexao
         $this->conn = null;
     }
 }
+
+$teste = new Database();
+$teste->selectClientes();
