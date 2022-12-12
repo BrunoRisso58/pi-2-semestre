@@ -21,7 +21,8 @@ class Database
     function createReadCliente($idPlano, $nome, $cpf, $idade, $telefone, $email, $senha) {
         try {
             $this->connect();
-            $sql = "INSERT INTO cliente (idPlano, nome, cpf, idade, telefone, email, senha) VALUES ($idPlano, '$nome', $cpf, $idade, $telefone, '$email', '$senha');";
+            $encodedSenha = sha1($senha);
+            $sql = "INSERT INTO cliente (idPlano, nome, cpf, idade, telefone, email, senha) VALUES ($idPlano, '$nome', $cpf, $idade, $telefone, '$email', '$encodedSenha');";
             $this->conn->exec($sql);
             $sql = "SELECT * FROM cliente";
             $result = $this->conn->query($sql)->fetchAll();
@@ -206,6 +207,3 @@ class Database
         $this->conn = null;
     }
 }
-
-$db = new Database();
-$db->readPlano();
