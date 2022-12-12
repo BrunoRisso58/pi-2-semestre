@@ -5,6 +5,8 @@ CREATE TABLE IF NOT EXISTS `plano` (
   `id` INT(1) NOT NULL AUTO_INCREMENT,
   `valor_plano` float NOT NULL,
   `tipo` varchar(15) NOT NULL,
+  `imagem` varchar(40),
+  `botao` varchar(15),
   PRIMARY KEY (`id`)
 );
 
@@ -92,29 +94,29 @@ SELECT nome, pontuacao FROM perfis WHERE nome LIKE busca;
 END $$
 delimiter ;
 
-/*TRIGGER PLANO PAGO  ////////////////////////////// */
-delimiter $$
-CREATE OR REPLACE TRIGGER status_plano_pago AFTER insert ON plano
-FOR EACH row
-BEGIN
-DECLARE valor INT;
+-- /*TRIGGER PLANO PAGO  ////////////////////////////// */
+-- delimiter $$
+-- CREATE OR REPLACE TRIGGER status_plano_pago AFTER insert ON plano
+-- FOR EACH row
+-- BEGIN
+-- DECLARE valor INT;
 
-UPDATE plano SET tipo = 'Pago', valor_plano = 99.90 WHERE idplano = valor;
+-- UPDATE plano SET tipo = 'Pago', valor_plano = 99.90 WHERE idplano = valor;
 
-END $$
-delimiter ;
+-- END $$
+-- delimiter ;
 
 /*TRIGGER PLANO GRATIS  ////////////////////////////// */
-delimiter $$
-CREATE OR REPLACE TRIGGER status_plano_gratis BEFORE insert ON plano
-FOR EACH row
-BEGIN
-DECLARE valor INT;
+-- delimiter $$
+-- CREATE OR REPLACE TRIGGER status_plano_gratis BEFORE insert ON plano
+-- FOR EACH row
+-- BEGIN
+-- DECLARE valor INT;
 
-UPDATE plano SET tipo = 'Grátis', valor_plano = 0 WHERE idplano = valor;
+-- UPDATE plano SET tipo = 'Grátis', valor_plano = 0 WHERE idplano = valor;
 
-END $$
-delimiter ;
+-- END $$
+-- delimiter ;
 
 /*view do cliente  ////////////////////////////// */
 CREATE or replace VIEW vw_cliente AS

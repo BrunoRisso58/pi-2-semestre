@@ -1,15 +1,15 @@
 {
-  "Cadastro": {
-    "description": "Auto imported from components/cadastro/cadastro.vue"
-  },
-  "CadastroMobile": {
-    "description": "Auto imported from components/cadastro/cadastroMobile.vue"
-  },
   "Header": {
     "description": "Auto imported from components/header/header.vue"
   },
   "HeaderMobile": {
     "description": "Auto imported from components/header/headerMobile.vue"
+  },
+  "Cadastro": {
+    "description": "Auto imported from components/cadastro/cadastro.vue"
+  },
+  "CadastroMobile": {
+    "description": "Auto imported from components/cadastro/cadastroMobile.vue"
   },
   "FooterMobile": {
     "description": "Auto imported from components/footer/footerMobile.vue"

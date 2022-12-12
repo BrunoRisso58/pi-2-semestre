@@ -1,13 +1,13 @@
 <template>
-  <div style="padding;: 0 auto">
+  <div style="padding: 0 auto">
     <v-row style="margin-top: 20px; padding: 40px">
-      <v-col cols="12" md="4" v-for="itens in planos" :key="itens">
+      <v-col cols="12" md="4" v-for="itens in planos" :key="itens.id">
         <v-card height="680">
-          <v-row>
+          <v-row >
             <v-col align="center">
-              <v-img :src="itens.image" />
+              <v-img :src="itens.imagem" />
 
-              <h2 class="title">{{ itens.name }}</h2>
+              <h2 class="title">{{ itens.tipo }}</h2>
 
               <p class="desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -17,10 +17,10 @@
 
               <h3>Preço:</h3>
 
-              <h2 class="price">{{ itens.valor }}</h2>
+              <h2 class="price">{{ itens.valor_plano }}</h2>
 
               <button class="btn-assinar">
-                {{ itens.btnName }}
+                {{ itens.botao }}
               </button>
             </v-col>
           </v-row>
@@ -32,31 +32,24 @@
 
 <script>
 export default {
-  data: () => ({
-    planos: [
-      {
-        image: "/p1.png",
-        name: "Gratuito",
-        valor: "00,00",
-        btnName: "Continuar",
-        to: "/jogos",
-      },
-      {
-        image: "/p2.png",
-        name: "Intermediário",
-        valor: "14,99",
-        btnName: "Assinar",
-        to: "",
-      },
-      {
-        image: "/p3.png",
-        name: "Avançado",
-        valor: "36,99",
-        btnName: "Assinar",
-        to: "",
-      },
-    ],
-  }),
+
+  data() {
+    return {
+      planos: []
+    }
+  },
+  methods: {
+    async getPlanos() {
+      const req = await fetch("http://localhost:8000/plano");
+      const data = await req.json();
+
+      this.planos = data;
+    }
+  },
+  mounted() {
+    this.getPlanos();
+  }
+
 };
 </script>
 
