@@ -4,6 +4,11 @@
             "id": 1,
             "valor_plano": 99.99,
             "tipo": "Avan\u00e7ado"
+        },
+        {
+            "id": 2,
+            "valor_plano": 0,
+            "tipo": "Gratuito"
         }
     ],
     "cliente": [
@@ -76,6 +81,16 @@
             "telefone": "5519358465823",
             "email": "thaina@email.com",
             "senha": "jskey123teste"
+        },
+        {
+            "id": 233,
+            "idPlano": 2,
+            "nome": "Daniel",
+            "CPF": "12345678902",
+            "idade": 32,
+            "telefone": "5519999999999",
+            "email": "daniel@email.com",
+            "senha": "d384988d64efce36cea9"
         }
     ],
     "pagamento": [
