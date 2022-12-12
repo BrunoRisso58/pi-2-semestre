@@ -18,6 +18,8 @@
                 </div>
 
                 <input type="button" value="Entrar" class="button-lgn" />
+                
+                <p>Não tem conta? <router-link to="/cadastro">Cadastre-se</router-link></p>
               </v-col>
             </v-row>
           </div>

@@ -1,9 +1,7 @@
 <template>
-  <div v-if="$vuetify.breakpoint.name !== 'xs'">
+  <div>
     <jogos></jogos>
   </div>
-
-  <div v-else></div>
 </template>
 
 <script>

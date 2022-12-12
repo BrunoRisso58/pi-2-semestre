@@ -2,7 +2,7 @@
   <div style="padding;: 0 auto">
     <v-row style="margin-top: 20px; padding: 40px">
       <v-col cols="12" md="4" v-for="itens in planos" :key="itens">
-        <v-card height="680">
+        <v-card>
           <v-row>
             <v-col align="center">
               <v-img :src="itens.image" />

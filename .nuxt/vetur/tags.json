@@ -5,23 +5,20 @@
   "CadastroMobile": {
     "description": "Auto imported from components/cadastro/cadastroMobile.vue"
   },
-  "Header": {
-    "description": "Auto imported from components/header/header.vue"
-  },
-  "HeaderMobile": {
-    "description": "Auto imported from components/header/headerMobile.vue"
-  },
   "FooterMobile": {
     "description": "Auto imported from components/footer/footerMobile.vue"
   },
   "FooterVue": {
     "description": "Auto imported from components/footer/footerVue.vue"
   },
+  "Header": {
+    "description": "Auto imported from components/header/header.vue"
+  },
+  "HeaderMobile": {
+    "description": "Auto imported from components/header/headerMobile.vue"
+  },
   "HomeQuemsomos": {
     "description": "Auto imported from components/home/quemsomos.vue"
-  },
-  "HomeRelatos": {
-    "description": "Auto imported from components/home/relatos.vue"
   },
   "HomeTdah": {
     "description": "Auto imported from components/home/tdah.vue"
