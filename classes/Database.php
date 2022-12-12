@@ -18,16 +18,6 @@ class Database
         }
     }
 
-    function create()  // adicionar mais conforme as tabelas
-    {
-        $this->connect();
-        $sql = "INSERT INTO 
-        VALUES ('')";
-        $this->conn->exec($sql);
-        echo ""; // Mensagem de exito 
-        $this->conn = null;
-    }
-
     function createReadCliente($idPlano, $nome, $cpf, $idade, $telefone, $email, $senha) {
         try {
             $this->connect();
@@ -213,32 +203,6 @@ class Database
         } catch (PDOException $e) {
             echo "Error: $e";
         };
-        $this->conn = null;
-    }
-
-    function update()  // adicionar mais conforme as tabelas
-    {
-        // RECEBER VARIAVEIS QUE VE DO CAMPO PARA ATUALIZAR
-        if (isset($_POST['update'])) {
-            $id = $_POST['id'];
-            $name = $_POST['name'];
-            $etc = $_POST['etc'];
-        }
-        //
-        $this->connect();
-        $sql = "UDATE tabela SET name ='$name'";  // exemplo
-        $this->conn->exec($sql);
-        echo ""; // Mensagem de exito 
-        $this->conn = null;
-    }
-
-    function delete()  // adicionar mais conforme as tabelas
-    {
-        $this->connect();
-        $sql = "DELETE FROM 
-        WHERE ";
-        $this->conn->exec($sql);
-        echo ""; // Mensagem de exito 
         $this->conn = null;
     }
 }
