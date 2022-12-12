@@ -1,0 +1,65 @@
+[
+  {
+    "name": "cadastro",
+    "path": "/cadastro",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\cadastro.vue",
+    "chunkName": "pages/cadastro",
+    "_name": "_83241304"
+  },
+  {
+    "name": "jogos",
+    "path": "/jogos",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\jogos.vue",
+    "chunkName": "pages/jogos",
+    "_name": "_6e19fbb1"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_e7c15f18"
+  },
+  {
+    "name": "oqueetdah",
+    "path": "/oqueetdah",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\oqueetdah.vue",
+    "chunkName": "pages/oqueetdah",
+    "_name": "_57bc96d5"
+  },
+  {
+    "name": "pagamento",
+    "path": "/pagamento",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\pagamento.vue",
+    "chunkName": "pages/pagamento",
+    "_name": "_d986c79e"
+  },
+  {
+    "name": "perfil",
+    "path": "/perfil",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\perfil.vue",
+    "chunkName": "pages/perfil",
+    "_name": "_5e01ac5e"
+  },
+  {
+    "name": "planos",
+    "path": "/planos",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\planos.vue",
+    "chunkName": "pages/planos",
+    "_name": "_aa886b5c"
+  },
+  {
+    "name": "quem-somos",
+    "path": "/quem-somos",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\quem-somos.vue",
+    "chunkName": "pages/quem-somos",
+    "_name": "_46694579"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7b10a546"
+  }
+]

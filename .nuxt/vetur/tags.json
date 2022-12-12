@@ -1,0 +1,47 @@
+{
+  "Cadastro": {
+    "description": "Auto imported from components/cadastro/cadastro.vue"
+  },
+  "CadastroMobile": {
+    "description": "Auto imported from components/cadastro/cadastroMobile.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header/header.vue"
+  },
+  "HeaderMobile": {
+    "description": "Auto imported from components/header/headerMobile.vue"
+  },
+  "FooterMobile": {
+    "description": "Auto imported from components/footer/footerMobile.vue"
+  },
+  "FooterVue": {
+    "description": "Auto imported from components/footer/footerVue.vue"
+  },
+  "HomeQuemsomos": {
+    "description": "Auto imported from components/home/quemsomos.vue"
+  },
+  "HomeRelatos": {
+    "description": "Auto imported from components/home/relatos.vue"
+  },
+  "HomeTdah": {
+    "description": "Auto imported from components/home/tdah.vue"
+  },
+  "Jogos": {
+    "description": "Auto imported from components/jogos/jogos.vue"
+  },
+  "Login": {
+    "description": "Auto imported from components/login/login.vue"
+  },
+  "LoginMobile": {
+    "description": "Auto imported from components/login/loginMobile.vue"
+  },
+  "Perfil": {
+    "description": "Auto imported from components/perfil/perfil.vue"
+  },
+  "PerfilMobile": {
+    "description": "Auto imported from components/perfil/perfilMobile.vue"
+  },
+  "Planos": {
+    "description": "Auto imported from components/planos/planos.vue"
+  }
+}
