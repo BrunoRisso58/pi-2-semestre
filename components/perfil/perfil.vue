@@ -12,13 +12,10 @@
               <v-row>
                 <v-col cols="12">
                   <div class="box-shadow">
-                    <v-img src="/perfil.png" width="200" />
+                    <v-img src="/perfil.png" width="200" style="border-radius: 50%" />
                     <br />
                     <h3>{{ pessoa[0].name }}</h3>
                   </div>
-                </v-col>
-                <v-col>
-                  <div class="box-shadow">informaçoes do aluno</div>
                 </v-col>
               </v-row>
             </v-col>
@@ -51,10 +48,10 @@ export default {
   data: () => ({
     pessoa: [
       {
-        name: "Maria",
+        name: "Bruno",
         tags: [
-          { nome: "raciocinio", points: 80 },
-          { nome: "velocidade", points: 30 },
+          { nome: "Raciocínio", points: 80 },
+          { nome: "Velocidade", points: 50 },
         ],
       },
     ],

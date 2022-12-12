@@ -15,7 +15,7 @@
                 {{ item.name }}
               </router-link>
             </v-col>
-            <v-col v-if="logado == false">
+            <v-col>
               <router-link
                 to="/login"
                 style="text-decoration: none; color: black"
@@ -24,7 +24,7 @@
               </router-link>
             </v-col>
 
-            <v-col v-else>
+            <v-col>
               <router-link
                 to="/perfil"
                 style="text-decoration: none; color: black"
