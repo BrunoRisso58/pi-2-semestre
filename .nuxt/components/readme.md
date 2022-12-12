@@ -6,14 +6,12 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<Header>` | `<header>` (components/header/header.vue)
-- `<HeaderMobile>` | `<header-mobile>` (components/header/headerMobile.vue)
-- `<Cadastro>` | `<cadastro>` (components/cadastro/cadastro.vue)
-- `<CadastroMobile>` | `<cadastro-mobile>` (components/cadastro/cadastroMobile.vue)
 - `<FooterMobile>` | `<footer-mobile>` (components/footer/footerMobile.vue)
 - `<FooterVue>` | `<footer-vue>` (components/footer/footerVue.vue)
 - `<Header>` | `<header>` (components/header/header.vue)
 - `<HeaderMobile>` | `<header-mobile>` (components/header/headerMobile.vue)
+- `<Cadastro>` | `<cadastro>` (components/cadastro/cadastro.vue)
+- `<CadastroMobile>` | `<cadastro-mobile>` (components/cadastro/cadastroMobile.vue)
 - `<HomeQuemsomos>` | `<home-quemsomos>` (components/home/quemsomos.vue)
 - `<HomeTdah>` | `<home-tdah>` (components/home/tdah.vue)
 - `<Jogos>` | `<jogos>` (components/jogos/jogos.vue)

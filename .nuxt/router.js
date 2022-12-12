@@ -4,15 +4,15 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _419664dd = () => interopDefault(import('..\\pages\\cadastro.vue' /* webpackChunkName: "pages/cadastro" */))
-const _8af77c9c = () => interopDefault(import('..\\pages\\jogos.vue' /* webpackChunkName: "pages/jogos" */))
-const _4eecd316 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _39a1f456 = () => interopDefault(import('..\\pages\\oqueetdah.vue' /* webpackChunkName: "pages/oqueetdah" */))
-const _7521f9b2 = () => interopDefault(import('..\\pages\\pagamento.vue' /* webpackChunkName: "pages/pagamento" */))
-const _11dda3f0 = () => interopDefault(import('..\\pages\\perfil.vue' /* webpackChunkName: "pages/perfil" */))
-const _28cb771e = () => interopDefault(import('..\\pages\\planos.vue' /* webpackChunkName: "pages/planos" */))
-const _bda0cfd0 = () => interopDefault(import('..\\pages\\quem-somos.vue' /* webpackChunkName: "pages/quem-somos" */))
-const _0ee1f35e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _83241304 = () => interopDefault(import('..\\pages\\cadastro.vue' /* webpackChunkName: "pages/cadastro" */))
+const _6e19fbb1 = () => interopDefault(import('..\\pages\\jogos.vue' /* webpackChunkName: "pages/jogos" */))
+const _e7c15f18 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _57bc96d5 = () => interopDefault(import('..\\pages\\oqueetdah.vue' /* webpackChunkName: "pages/oqueetdah" */))
+const _d986c79e = () => interopDefault(import('..\\pages\\pagamento.vue' /* webpackChunkName: "pages/pagamento" */))
+const _5e01ac5e = () => interopDefault(import('..\\pages\\perfil.vue' /* webpackChunkName: "pages/perfil" */))
+const _aa886b5c = () => interopDefault(import('..\\pages\\planos.vue' /* webpackChunkName: "pages/planos" */))
+const _46694579 = () => interopDefault(import('..\\pages\\quem-somos.vue' /* webpackChunkName: "pages/quem-somos" */))
+const _7b10a546 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -27,39 +27,39 @@ export const routerOptions = {
 
   routes: [{
     path: "/cadastro",
-    component: _419664dd,
+    component: _83241304,
     name: "cadastro"
   }, {
     path: "/jogos",
-    component: _8af77c9c,
+    component: _6e19fbb1,
     name: "jogos"
   }, {
     path: "/login",
-    component: _4eecd316,
+    component: _e7c15f18,
     name: "login"
   }, {
     path: "/oqueetdah",
-    component: _39a1f456,
+    component: _57bc96d5,
     name: "oqueetdah"
   }, {
     path: "/pagamento",
-    component: _7521f9b2,
+    component: _d986c79e,
     name: "pagamento"
   }, {
     path: "/perfil",
-    component: _11dda3f0,
+    component: _5e01ac5e,
     name: "perfil"
   }, {
     path: "/planos",
-    component: _28cb771e,
+    component: _aa886b5c,
     name: "planos"
   }, {
     path: "/quem-somos",
-    component: _bda0cfd0,
+    component: _46694579,
     name: "quem-somos"
   }, {
     path: "/",
-    component: _0ee1f35e,
+    component: _7b10a546,
     name: "index"
   }],
 

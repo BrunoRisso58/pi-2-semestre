@@ -50,7 +50,7 @@ export default {
     logado: false,
     header: [
       { name: "Home", route: "/" },
-      { name: "Oque é TDHA", route: "/oqueetdah" },
+      { name: "Oque é TDAH", route: "/oqueetdah" },
       { name: "Planos", route: "/planos" },
       { name: "Jogos", route: "/jogos" },
     ],

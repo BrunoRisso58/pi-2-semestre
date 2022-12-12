@@ -31,27 +31,7 @@
             "idade": 19,
             "telefone": "5519999999999",
             "email": "bruno@email.com",
-            "senha": "e0f68134d29dc326d115de4c8fab8700a3c4b002"
-        },
-        {
-            "id": 2,
-            "id_plano": 2,
-            "nome": "Vitor",
-            "cpf": "12343631942",
-            "idade": 18,
-            "telefone": "5519977777777",
-            "email": "vitor@email.com",
-            "senha": "c65d402856c41442bdc375db3d7d80c636e1132b"
-        },
-        {
-            "id": 3,
-            "id_plano": 3,
-            "nome": "Thain\u00e1",
-            "cpf": "32164878904",
-            "idade": 26,
-            "telefone": "5519922222222",
-            "email": "thaina@email.com",
-            "senha": "e67aa6a0da0dc3fb97137a9717663c4a6ffeff4c"
+            "senha": "123teste"
         }
     ],
     "pagamento": [

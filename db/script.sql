@@ -125,3 +125,25 @@ FROM cliente c
 INNER JOIN perfil p
 WHERE c.nome 
 LIKE c.nome;
+
+INSERT INTO plano(valor_plano, tipo, imagem, botao) VALUES
+(00.00, "Gratuito", "/p1.png", "Continuar"),
+(14.99, "Intermediário", "/p2.png", "Assinar"),
+(36.99, "Avançado", "/p3.png", "Assinar")
+
+INSERT INTO cliente VALUES
+(1, 1, 'Bruno', 12345678912, 19, 5519999999999, 'bruno@email.com', 'e0f68134d29dc326d115de4c8fab8700a3c4b002'),
+(2, 2, 'Vitor', 12343631942, 18, 5519977777777, 'vitor@email.com', 'c65d402856c41442bdc375db3d7d80c636e1132b'),
+(3, 3, 'Thainá', 32164878904, 26, 5519922222222, 'thaina@email.com', 'e67aa6a0da0dc3fb97137a9717663c4a6ffeff4c')
+
+INSERT INTO pagamento VALUES 
+(1, 2, 2, 14.99, '2022-12-12'),
+(2, 3, 3, 36.99, '2022-12-11')
+
+INSERT INTO perfil VALUES
+(1, 1, 'Enzo', 190),
+(2, 1, 'Gabriel', 195),
+(3, 2, 'Pietro', 189),
+(4, 2, 'Valentina', 193),
+(5, 3, 'Aquila', 176),
+(6, 3, 'Priscila', 200)
