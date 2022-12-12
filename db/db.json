@@ -1,0 +1,111 @@
+{
+    "plano": [
+        {
+            "id": 1,
+            "valor_plano": 99.99,
+            "tipo": "Avan\u00e7ado"
+        }
+    ],
+    "cliente": [
+        {
+            "id": 1,
+            "idPlano": 1,
+            "nome": "Bruno",
+            "CPF": "50201707802",
+            "idade": 19,
+            "telefone": "551999965130",
+            "email": "brunorisso58@gmail.com",
+            "senha": "teste123"
+        },
+        {
+            "id": 2,
+            "idPlano": 1,
+            "nome": "Vitor",
+            "CPF": "12345678901",
+            "idade": 18,
+            "telefone": "5519123456789",
+            "email": "vitor@email.com",
+            "senha": "senha123"
+        },
+        {
+            "id": 3,
+            "idPlano": 1,
+            "nome": "Thain\u00e1",
+            "CPF": "84958237457",
+            "idade": 26,
+            "telefone": "5519358465823",
+            "email": "thaina@email.com",
+            "senha": "jskey123"
+        },
+        {
+            "id": 229,
+            "idPlano": 1,
+            "nome": "Thain\u00e1",
+            "CPF": "84958237457",
+            "idade": 26,
+            "telefone": "5519358465823",
+            "email": "thaina@email.com",
+            "senha": "jskey123teste"
+        },
+        {
+            "id": 230,
+            "idPlano": 1,
+            "nome": "Thain\u00e1",
+            "CPF": "84958237457",
+            "idade": 26,
+            "telefone": "5519358465823",
+            "email": "thaina@email.com",
+            "senha": "jskey123teste"
+        },
+        {
+            "id": 231,
+            "idPlano": 1,
+            "nome": "Thain\u00e1",
+            "CPF": "84958237457",
+            "idade": 26,
+            "telefone": "5519358465823",
+            "email": "thaina@email.com",
+            "senha": "jskey123teste"
+        },
+        {
+            "id": 232,
+            "idPlano": 1,
+            "nome": "Thain\u00e1",
+            "CPF": "84958237457",
+            "idade": 26,
+            "telefone": "5519358465823",
+            "email": "thaina@email.com",
+            "senha": "jskey123teste"
+        }
+    ],
+    "pagamento": [
+        {
+            "id_pgto": 1,
+            "idPlano": 1,
+            "idCliente": 1,
+            "valor_pgto": "99.99",
+            "data_compra": "2022-11-12"
+        },
+        {
+            "id_pgto": 2,
+            "idPlano": 1,
+            "idCliente": 1,
+            "valor_pgto": "99.99",
+            "data_compra": "2022-12-12"
+        }
+    ],
+    "perfis": [
+        {
+            "id_perfil": 1,
+            "id_cliente": 1,
+            "nome": "Enzo",
+            "pontuacao": 190
+        },
+        {
+            "id_perfil": 2,
+            "id_cliente": 1,
+            "nome": "Athos",
+            "pontuacao": 780
+        }
+    ]
+}
