@@ -6,7 +6,7 @@ class Database
     public $dbname = '';
     public $conn;
     public $userDB = "root";
-    public $password = "";
+    public $passwordDB = "";
 
     function connect()
     {
@@ -18,81 +18,192 @@ class Database
         }
     }
 
-    function create()  // adicionar mais conforme as tabelas
-    {
-        $this->connect();
-        $sql = "INSERT INTO 
-        VALUES ('')";
-        $this->conn->exec($sql);
-        echo ""; // Mensagem de exito 
-        $this->conn = null;
-    }
-
-    function selectClientes()  // adicionar mais conforme as tabelas
-    {
+    function createReadCliente($idPlano, $nome, $cpf, $idade, $telefone, $email, $senha) {
         try {
             $this->connect();
+            $encodedSenha = sha1($senha);
+            $sql = "INSERT INTO cliente (idPlano, nome, cpf, idade, telefone, email, senha) VALUES ($idPlano, '$nome', $cpf, $idade, $telefone, '$email', '$encodedSenha');";
+            $this->conn->exec($sql);
             $sql = "SELECT * FROM cliente";
             $result = $this->conn->query($sql)->fetchAll();
             if ($result == false) {
                 echo "Ainda não há nenhum cliente criado!";
             } else {
-                foreach ($result as $row) {
-                    $dataJson = file_get_contents('db.json');
-                    $decodedDataJson = json_decode($dataJson, true);
-
-                    $dadosCliente = [
-                        'cliente' => [
-                            [
-                                'id' => '1',
-                                'idPlano' => '1',
-                                'nome' => 'Vitor',
-                                'CPF' => '15218229824',
-                                'idade' => '18',
-                                'telefone' => '19998526524',
-                                'email' => 'senha'
-                            ],
-                        ],
-                    ];
-
-                    $newDataJson = $decodedDataJson['cliente'] . $dadosCliente;
-
-                    $arquivo = __DIR__ . '../../db.json';
-                    file_put_contents($arquivo, json_encode($newDataJSon, JSON_PRETTY_PRINT));
+                $dataJson = file_get_contents('../db/db.json');
+                $decodedDataJson = json_decode($dataJson, true);
+                foreach ($result as $index => $row) {
+                    unset($result[$index][0]);
+                    unset($result[$index][1]);
+                    unset($result[$index][2]);
+                    unset($result[$index][3]);
+                    unset($result[$index][4]);
+                    unset($result[$index][5]);
+                    unset($result[$index][6]);
+                    unset($result[$index][7]);
                 }
+
+                $newDataJson = [
+                    'plano' => [
+                        ...$decodedDataJson['plano']
+                    ],
+                    'cliente' => [
+                        ...$result
+                    ],
+                    'pagamento' => [
+                        ...$decodedDataJson['pagamento']
+                    ],
+                    'perfis' => [
+                        ...$decodedDataJson['perfis']
+                    ]
+                ];
+
+                $arquivo = __DIR__ . '/../db/db.json';
+                file_put_contents($arquivo, "");
+                file_put_contents($arquivo, json_encode($newDataJson, JSON_PRETTY_PRINT));
             }
         } catch (PDOException $e) {
-            echo "Não foi possível ler as informações do banco de dados.";
+            echo "Error: $e";
         };
         $this->conn = null;
     }
 
-    function update()  // adicionar mais conforme as tabelas
-    {
-        // RECEBER VARIAVEIS QUE VE DO CAMPO PARA ATUALIZAR
-        if (isset($_POST['update'])) {
-            $id = $_POST['id'];
-            $name = $_POST['name'];
-            $etc = $_POST['etc'];
-        }
-        //
-        $this->connect();
-        $sql = "UDATE tabela SET name ='$name'";  // exemplo
-        $this->conn->exec($sql);
-        echo ""; // Mensagem de exito 
+    function createReadPerfil($idCliente, $nome, $pontuacao = 0) {
+        try {
+            $this->connect();
+            $sql = "INSERT INTO perfis (id_cliente, nome, pontuacao) VALUES ($idCliente, '$nome', $pontuacao);";
+            $this->conn->exec($sql);
+            $sql = "SELECT * FROM perfis";
+            $result = $this->conn->query($sql)->fetchAll();
+            if ($result == false) {
+                echo "Ainda não há nenhum perfil criado!";
+            } else {
+                $dataJson = file_get_contents('../db/db.json');
+                $decodedDataJson = json_decode($dataJson, true);
+                foreach ($result as $index => $row) {
+                    unset($result[$index][0]);
+                    unset($result[$index][1]);
+                    unset($result[$index][2]);
+                    unset($result[$index][3]);
+                    unset($result[$index][4]);
+                    unset($result[$index][5]);
+                    unset($result[$index][6]);
+                    unset($result[$index][7]);
+                }
+
+                $newDataJson = [
+                    'plano' => [
+                        ...$decodedDataJson['plano']
+                    ],
+                    'cliente' => [
+                        ...$decodedDataJson['cliente']
+                    ],
+                    'pagamento' => [
+                        ...$decodedDataJson['pagamento']
+                    ],
+                    'perfis' => [
+                        ...$result
+                    ]
+                ];
+
+                $arquivo = __DIR__ . '/../db/db.json';
+                file_put_contents($arquivo, "");
+                file_put_contents($arquivo, json_encode($newDataJson, JSON_PRETTY_PRINT));
+            }
+        } catch (PDOException $e) {
+            echo "Error: $e";
+        };
         $this->conn = null;
     }
 
-    function delete()  // adicionar mais conforme as tabelas
-    {
-        $this->connect();
-        $sql = "DELETE FROM 
-        WHERE ";
-        $this->conn->exec($sql);
-        echo ""; // Mensagem de exito 
+    function readPagamento() {
+        try {
+            $this->connect();
+            $sql = "SELECT * FROM pagamento";
+            $result = $this->conn->query($sql)->fetchAll();
+            if ($result == false) {
+                echo "Ainda não há nenhum pagamento criado!";
+            } else {
+                $dataJson = file_get_contents('../db/db.json');
+                $decodedDataJson = json_decode($dataJson, true);
+                foreach ($result as $index => $row) {
+                    unset($result[$index][0]);
+                    unset($result[$index][1]);
+                    unset($result[$index][2]);
+                    unset($result[$index][3]);
+                    unset($result[$index][4]);
+                    unset($result[$index][5]);
+                    unset($result[$index][6]);
+                    unset($result[$index][7]);
+                }
+
+                $newDataJson = [
+                    'plano' => [
+                        ...$decodedDataJson['plano']
+                    ],
+                    'cliente' => [
+                        ...$decodedDataJson['cliente']
+                    ],
+                    'pagamento' => [
+                        ...$result
+                    ],
+                    'perfis' => [
+                        ...$decodedDataJson['perfis']
+                    ]
+                ];
+
+                $arquivo = __DIR__ . '/../db/db.json';
+                file_put_contents($arquivo, "");
+                file_put_contents($arquivo, json_encode($newDataJson, JSON_PRETTY_PRINT));
+            }
+        } catch (PDOException $e) {
+            echo "Error: $e";
+        };
+        $this->conn = null;
+    }
+
+    function readPlano() {
+        try {
+            $this->connect();
+            $sql = "SELECT * FROM plano";
+            $result = $this->conn->query($sql)->fetchAll();
+            if ($result == false) {
+                echo "Ainda não há nenhum plano criado!";
+            } else {
+                $dataJson = file_get_contents('../db/db.json');
+                $decodedDataJson = json_decode($dataJson, true);
+                foreach ($result as $index => $row) {
+                    unset($result[$index][0]);
+                    unset($result[$index][1]);
+                    unset($result[$index][2]);
+                    unset($result[$index][3]);
+                    unset($result[$index][4]);
+                    unset($result[$index][5]);
+                    unset($result[$index][6]);
+                    unset($result[$index][7]);
+                }
+
+                $newDataJson = [
+                    'plano' => [
+                        ...$result
+                    ],
+                    'cliente' => [
+                        ...$decodedDataJson['cliente']
+                    ],
+                    'pagamento' => [
+                        ...$decodedDataJson['pagamento']
+                    ],
+                    'perfis' => [
+                        ...$decodedDataJson['perfis']
+                    ]
+                ];
+
+                $arquivo = __DIR__ . '/../db/db.json';
+                file_put_contents($arquivo, "");
+                file_put_contents($arquivo, json_encode($newDataJson, JSON_PRETTY_PRINT));
+            }
+        } catch (PDOException $e) {
+            echo "Error: $e";
+        };
         $this->conn = null;
     }
 }
-
-$teste = new Database();
-$teste->selectClientes();
