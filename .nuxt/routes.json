@@ -2,64 +2,64 @@
   {
     "name": "cadastro",
     "path": "/cadastro",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\cadastro.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\cadastro.vue",
     "chunkName": "pages/cadastro",
-    "_name": "_83241304"
+    "_name": "_419664dd"
   },
   {
     "name": "jogos",
     "path": "/jogos",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\jogos.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\jogos.vue",
     "chunkName": "pages/jogos",
-    "_name": "_6e19fbb1"
+    "_name": "_8af77c9c"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\login.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\login.vue",
     "chunkName": "pages/login",
-    "_name": "_e7c15f18"
+    "_name": "_4eecd316"
   },
   {
     "name": "oqueetdah",
     "path": "/oqueetdah",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\oqueetdah.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\oqueetdah.vue",
     "chunkName": "pages/oqueetdah",
-    "_name": "_57bc96d5"
+    "_name": "_39a1f456"
   },
   {
     "name": "pagamento",
     "path": "/pagamento",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\pagamento.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\pagamento.vue",
     "chunkName": "pages/pagamento",
-    "_name": "_d986c79e"
+    "_name": "_7521f9b2"
   },
   {
     "name": "perfil",
     "path": "/perfil",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\perfil.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\perfil.vue",
     "chunkName": "pages/perfil",
-    "_name": "_5e01ac5e"
+    "_name": "_11dda3f0"
   },
   {
     "name": "planos",
     "path": "/planos",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\planos.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\planos.vue",
     "chunkName": "pages/planos",
-    "_name": "_aa886b5c"
+    "_name": "_28cb771e"
   },
   {
     "name": "quem-somos",
     "path": "/quem-somos",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\quem-somos.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\quem-somos.vue",
     "chunkName": "pages/quem-somos",
-    "_name": "_46694579"
+    "_name": "_bda0cfd0"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\xampp\\\\htdocs\\\\PI\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Murilo Altoé\\\\Desktop\\\\pi\\\\pi-2-semestre\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_7b10a546"
+    "_name": "_0ee1f35e"
   }
 ]

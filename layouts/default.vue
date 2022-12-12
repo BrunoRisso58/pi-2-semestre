@@ -1,15 +1,15 @@
 <template>
   <div>
     <div v-if="$vuetify.breakpoint.name !== 'xs'">
-      <header-vue />
-      <Nuxt />
+      <header-vue/>
+      <Nuxt style="margin: 30px 0"/>
       <footer-vue />
     </div>
 
     <div v-else>
       <header-mobile />
       <Nuxt />
-      <footer-mobile />
+      <footer-vue />
     </div>
   </div>
 </template>
@@ -19,7 +19,6 @@ import headerMobile from "../components/header/headerMobile.vue";
 import headerVue from "../components/header/header.vue";
 import indexVue from "../pages/index.vue";
 import footerVue from "../components/footer/footerVue.vue";
-import footerMobile from "../components/footer/footerMobile.vue";
 
 export default {
   components: {
@@ -27,7 +26,6 @@ export default {
     headerVue,
     headerMobile,
     footerVue,
-    footerMobile,
   },
 
   data() {
