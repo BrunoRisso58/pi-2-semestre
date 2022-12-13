@@ -46,7 +46,7 @@ Além disso, a plataforma também pode ser utilizada para ensino de outros tópi
 - Cypress<br>
 
 ## Documentação 
-Acesse nossa documentação completa do projeto <b>[aqui](tinyurl.com/ForAllDocs)</b>
+Acesse nossa documentação completa do projeto <b>[aqui](https://docs.google.com/document/d/1PneiC3AOsab8uOVGnBj46rlkkGfFu2zQCTsX7Kxpxvk/edit?usp=sharing)</b>
 
 ## Integrantes do Projeto
 - André Martins | [GitHub](https://github.com/Andre520)
