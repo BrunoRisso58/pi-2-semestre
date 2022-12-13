@@ -11,6 +11,7 @@
               <router-link
                 :to="item.route"
                 style="text-decoration: none; color: black"
+                :id="item.name.replace(/\s/g, '')"
               >
                 {{ item.name }}
               </router-link>
@@ -19,6 +20,7 @@
               <router-link
                 to="/login"
                 style="text-decoration: none; color: black"
+                id="login"
               >
                 Login
               </router-link>
@@ -28,6 +30,7 @@
               <router-link
                 to="/perfil"
                 style="text-decoration: none; color: black"
+                id="perfil"
               >
                 Perfil
               </router-link>
