@@ -2,114 +2,55 @@
     "plano": [
         {
             "id": 1,
-            "valor_plano": 99.99,
-            "tipo": "Avan\u00e7ado"
+            "valor_plano": 0,
+            "tipo": "Gratuito",
+            "imagem": "\/p1.png",
+            "botao": "Continuar"
         },
         {
             "id": 2,
-            "valor_plano": 0,
-            "tipo": "Gratuito"
+            "valor_plano": 14.99,
+            "tipo": "Intermedi\u00e1rio",
+            "imagem": "\/p2.png",
+            "botao": "Assinar"
+        },
+        {
+            "id": 3,
+            "valor_plano": 36.99,
+            "tipo": "Avan\u00e7ado",
+            "imagem": "\/p3.png",
+            "botao": "Assinar"
         }
     ],
     "cliente": [
         {
             "id": 1,
-            "idPlano": 1,
+            "id_plano": 1,
             "nome": "Bruno",
-            "CPF": "50201707802",
+            "cpf": "12345678912",
             "idade": 19,
-            "telefone": "551999965130",
-            "email": "brunorisso58@gmail.com",
-            "senha": "teste123"
-        },
-        {
-            "id": 2,
-            "idPlano": 1,
-            "nome": "Vitor",
-            "CPF": "12345678901",
-            "idade": 18,
-            "telefone": "5519123456789",
-            "email": "vitor@email.com",
-            "senha": "senha123"
-        },
-        {
-            "id": 3,
-            "idPlano": 1,
-            "nome": "Thain\u00e1",
-            "CPF": "84958237457",
-            "idade": 26,
-            "telefone": "5519358465823",
-            "email": "thaina@email.com",
-            "senha": "jskey123"
-        },
-        {
-            "id": 229,
-            "idPlano": 1,
-            "nome": "Thain\u00e1",
-            "CPF": "84958237457",
-            "idade": 26,
-            "telefone": "5519358465823",
-            "email": "thaina@email.com",
-            "senha": "jskey123teste"
-        },
-        {
-            "id": 230,
-            "idPlano": 1,
-            "nome": "Thain\u00e1",
-            "CPF": "84958237457",
-            "idade": 26,
-            "telefone": "5519358465823",
-            "email": "thaina@email.com",
-            "senha": "jskey123teste"
-        },
-        {
-            "id": 231,
-            "idPlano": 1,
-            "nome": "Thain\u00e1",
-            "CPF": "84958237457",
-            "idade": 26,
-            "telefone": "5519358465823",
-            "email": "thaina@email.com",
-            "senha": "jskey123teste"
-        },
-        {
-            "id": 232,
-            "idPlano": 1,
-            "nome": "Thain\u00e1",
-            "CPF": "84958237457",
-            "idade": 26,
-            "telefone": "5519358465823",
-            "email": "thaina@email.com",
-            "senha": "jskey123teste"
-        },
-        {
-            "id": 233,
-            "idPlano": 2,
-            "nome": "Daniel",
-            "CPF": "12345678902",
-            "idade": 32,
             "telefone": "5519999999999",
-            "email": "daniel@email.com",
-            "senha": "d384988d64efce36cea9"
+            "email": "bruno@email.com",
+            "senha": "123teste"
         }
     ],
     "pagamento": [
         {
             "id_pgto": 1,
-            "idPlano": 1,
-            "idCliente": 1,
-            "valor_pgto": "99.99",
-            "data_compra": "2022-11-12"
+            "id_plano": 2,
+            "id_cliente": 2,
+            "valor_pgto": "14.99",
+            "data_compra": "2022-12-12"
         },
         {
             "id_pgto": 2,
-            "idPlano": 1,
-            "idCliente": 1,
-            "valor_pgto": "99.99",
-            "data_compra": "2022-12-12"
+            "id_plano": 3,
+            "id_cliente": 3,
+            "valor_pgto": "36.99",
+            "data_compra": "2022-12-11"
         }
     ],
-    "perfis": [
+    "perfil": [
         {
             "id_perfil": 1,
             "id_cliente": 1,
@@ -119,8 +60,32 @@
         {
             "id_perfil": 2,
             "id_cliente": 1,
-            "nome": "Athos",
-            "pontuacao": 780
+            "nome": "Gabriel",
+            "pontuacao": 195
+        },
+        {
+            "id_perfil": 3,
+            "id_cliente": 2,
+            "nome": "Pietro",
+            "pontuacao": 189
+        },
+        {
+            "id_perfil": 4,
+            "id_cliente": 2,
+            "nome": "Valentina",
+            "pontuacao": 193
+        },
+        {
+            "id_perfil": 5,
+            "id_cliente": 3,
+            "nome": "Aquila",
+            "pontuacao": 176
+        },
+        {
+            "id_perfil": 6,
+            "id_cliente": 3,
+            "nome": "Priscila",
+            "pontuacao": 200
         }
     ]
 }

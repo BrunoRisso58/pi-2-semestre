@@ -7,11 +7,12 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "api": "json-server --watch db/db.json"
+    "api": "json-server --watch -p 8000 db/db.json"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.19.3",
+    "json-server": "^0.17.1",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
@@ -20,6 +21,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3"
+    "@nuxtjs/vuetify": "^1.12.3",
+    "cypress": "^12.1.0"
   }
 }

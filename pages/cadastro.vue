@@ -1,11 +1,14 @@
 <template>
   <div v-if="$vuetify.breakpoint.name !== 'xs'"><cadastro /></div>
 
-  <div v-else></div>
+  <div v-else><cadastro-mobile></cadastro-mobile></div>
 </template>
 
 <script>
-export default {};
+import cadastroMobile from "../components/cadastro/cadastroMobile.vue";
+export default {
+  components: { cadastroMobile },
+};
 </script>
 
 <style>
