@@ -37,11 +37,14 @@ Além disso, a plataforma também pode ser utilizada para ensino de outros tópi
 - HTML5<br>
 - CSS3<br>
 - VUE.JS<br>
+
 <b>BACK-END:</b><br>
 - PHP<br>
 - JSON Server<br>
+
 <b>BANCO DE DADOS:</b> <br>
 - MYSQL<br>
+
 <b>TESTE:</b><br>
 - Cypress<br>
 
@@ -50,10 +53,10 @@ Acesse nossa documentação completa do projeto <b>[aqui](https://docs.google.co
 
 ## Integrantes do Projeto
 - André Martins | [GitHub](https://github.com/Andre520)
-- Bruno Risso | [GitHub](https://github.com/BrunoRisso58)
+- Bruno Risso- Product Owner | [GitHub](https://github.com/BrunoRisso58)
 - Daniel Carolino | [GitHub](https://github.com/DanielCarolino89)
 - Murilo Altoe | | [GitHub](https://github.com/MuriloAltoe)
 - Pablo Barbosa | [GitHub](https://github.com/Masterkingchefe)
-- Thainá Roveroni Zanfolin | [GitHub](https://github.com/thainazanfolin)
+- Thainá Roveroni Zanfolin - Scrum Master| [GitHub](https://github.com/thainazanfolin)
 - Vitor Villa | [GitHub](https://github.com/VitorVilla)
 
